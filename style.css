@@ -1,6 +1,6 @@
 :root {
   --product-light-blue: rgb(248, 235, 210);
-  --badge-orange: rgb(255, 165, 0, 0.8);
+  --product-orange: rgb(255, 165, 0, 0.8);
   --product-red: rgb(182, 25, 25);
   --product-white: #fff;
   --border-brown: #653912;
@@ -17,21 +17,21 @@ body {
 }
 
 .product-card {
+  position: relative;
   width: 360px;
+  top: 100px;
+  margin: auto;
   border-radius: 12px;
   border: 12px solid var(--border-brown);
   box-shadow: 8px 8px 16px var(--shadow-grey),
     -8px -8px 16px var(--product-white);
-  margin: auto;
-  position: relative;
-  top: 100px;
 }
 
 .info-badge {
   display: inline-block;
   position: absolute;
   top: 36px;
-  background-color: var(--badge-orange);
+  background-color: var(--product-orange);
   padding: 5px 16px;
   border-radius: 0px 5px 5px 0px;
   font-size: 14px;
